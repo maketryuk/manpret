@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/precss.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Maniet</title>
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="header-top">
+      <div class="lang">
+        <a onclick="showLanguages()" class="lang-btn">English</a>
+        <div class="lang-dropdown">
+          <a class="lang-item" href="#">Français</a>
+          <a class="lang-item" href="#">Nederlands</a>
+        </div>
+      </div>
+      <ul class="header-menu">
+        <li><a class="menu-link" href="#">Our stores</a></li>
+        <li><a class="menu-link" href="#">Blog</a></li>
+        <li><a class="menu-link" href="#">About us</a></li>
+        <li><a class="menu-link" href="#">Your advantages</a></li>
+        <li><a class="menu-link" href="#">FAQ</a></li>
+        <li><a class="menu-link" href="#">Jobs</a></li>
+        <li><a class="menu-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="header-main">
+      <a href="#" class="header-logo">
+        <img src="./img/main-logo.svg" alt="">
+      </a>
+      <div class="header-search">
+        <form action="">
+          <div class="form-control">
+            <input type="search" name="" id="" placeholder="Search...">
+            <button type="submit">
+              <i class="icon-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="header-control">
+        <a href="#" class="header-favourite">
+          <i class="icon-heart"></i>
+        </a>
+        <a href="#" class="header-account">
+          <i class="icon-user"></i>
+        </a>
+        <a href="#" class="header-cart">
+          <i class="icon-cart"></i>
+          <!-- <span class="cart-total">2</span> -->
+        </a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <ul class="header-categories">
+        <li><a class="categories-link" href="#">Ladies</a></li>
+        <li><a class="categories-link" href="#">Mens</a></li>
+        <li><a class="categories-link" href="#">girls</a></li>
+        <li><a class="categories-link" href="#">boys</a></li>
+        <li><a class="categories-link" href="#">crazy prices</a></li>
+        <li><a class="categories-link" href="#">brands</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main>
+    <nav class="breadcrumb-nav">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Girls</span></a></li>
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Accessories</span></a></li>
+        <li class="breadcrumb-item"> Bagages/sacs ordinateurs</li>
+      </ul>
+    </nav>
+    <section class="main-content">
+      <div class="sidebar">
+
+        <div class="sidebar-item">
+          <div class="sidebar-title">
+            NOW SHOPING BY
+          </div>
+          <div class="sidebar-content">
+            <div class="filter-control">
+              <a href="#" class="filter-remove"></a>
+              <span class="filter-brand">Brand:</span>
+              <span class="filter-value">AMERICAN TOURISTER</span>
+            </div>
+          </div>
+          <div class="filter-clear">
+            <a href="#" class="clear-btn">Clear All</a>
+          </div>
+        </div>
+
+
+        <div class="sidebar-item">
+          <div class="sidebar-title">BRAND
+            <button class="sidebar-toggle">
+              <i class="icon-triangle"></i>
+            </button>
+          </div>
+          <div class="sidebar-content">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-1">
+                <label for="filter-item-1">AMERICAN TOURISTER
+                  <span>(4)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar-item">
+          <div class="sidebar-title">PRICE
+            <button class="sidebar-toggle">
+              <i class="icon-triangle"></i>
+            </button>
+          </div>
+          <div class="sidebar-content">
+            <div id="slider-range"></div>
+            <div class="slider-range-total">
+              <input type="text" id="amount" readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-item">
+          <div class="sidebar-title">BRAND
+            <button class="sidebar-toggle">
+              <i class="icon-triangle"></i>
+            </button>
+          </div>
+          <div class="sidebar-content">
+            <div class="filter-search">
+              <form action="">
+                <input type="search" placeholder="Search">
+              </form>
+            </div>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-1">
+                <label for="filter-item-1">AMERICAN TOURISTER
+                  <span>(4)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-1">
+                <label for="filter-item-1">AMERICAN TOURISTER
+                  <span>(4)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-1">
+                <label for="filter-item-1">AMERICAN TOURISTER
+                  <span>(4)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-1">
+                <label for="filter-item-1">AMERICAN TOURISTER
+                  <span>(4)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-1">
+                <label for="filter-item-1">AMERICAN TOURISTER
+                  <span>(4)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-1">
+                <label for="filter-item-1">AMERICAN TOURISTER
+                  <span>(4)</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="" id="filter-item-2">
+                <label for="filter-item-1">SAMSONITE
+                  <span>(2)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="content">
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer>
+
+  </footer>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>
