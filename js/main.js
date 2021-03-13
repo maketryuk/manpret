@@ -33,10 +33,16 @@ let front = {
       $(document).on('click', '.sidebar-mobile-toggler', function () {
         $('.sidebar').toggleClass('active');
       });
-
-      $(document).on('click', '.products-text .more-btn', function () {
-        $(this).hide();
-        $('.products-text p').css('display', 'block');
+      $(".products-text .more-btn").on("click", function(e) {
+        let content = $(this).parent().find('.additional-text');
+        content.toggleClass('active');
+        if (content.hasClass('active')) {
+          $(this).parent().find('.additional-text').show();
+          $(this).text('Show Less').toggleClass('active');
+        } else {
+          $(this).parent().find('.additional-text').hide();
+          $(this).text('Show More').toggleClass('active');
+        }
       });
 
       $(document).on('click', '.sidebar-title', function () {
@@ -50,12 +56,6 @@ let front = {
             list.slideToggle();
         }
       });
-      // $(document).on('click', '.btn-filter', function () {
-      //     let item = $(this);
-      //     let list = $(this).next('.filter-container');
-      //     $('body').toggleClass('active');
-      //     $('.filter-container').toggleClass('active');
-      //   });
   }
 };
 
