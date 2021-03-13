@@ -25,6 +25,10 @@
   content: "\e905";
 }
 
+.icon-filter:before {
+  content: "\e907";
+}
+
 .icon-sort-arrow:before {
   content: "\e906";
 }
@@ -47,6 +51,10 @@
 
 .icon-user:before {
   content: "\e903";
+}
+
+body.overflow {
+  overflow: hidden;
 }
 
 .header .lang.show .lang-dropdown {
@@ -126,6 +134,10 @@
 
 .header-menu li {
   padding-left: 20px;
+}
+
+.header-search {
+  margin: 0 10px;
 }
 
 .header-search .form-control {
@@ -385,7 +397,7 @@ main {
 }
 
 .select-wrapper select {
-  padding: 4px 20px 4px 4px;
+  padding: 4px 22px 4px 10px;
 }
 
 .product-list {
@@ -584,6 +596,7 @@ main {
 
 .footer-column {
   width: 25%;
+  padding: 0 15px;
 }
 
 .footer-title {
