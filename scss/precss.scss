@@ -642,8 +642,8 @@ main {
 
 .hamburger {
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   position: relative;
   z-index: 22;
 	margin-left: 10px;
@@ -961,6 +961,11 @@ main {
   .product-list {
     margin: 10px -10px 0 -10px;
   }
+  .product-parameters {
+		& .value {
+			margin-left: 10px;
+		}
+  }
 }
 
 @media (max-width: 576px) {
@@ -976,10 +981,10 @@ main {
 		width: 43%;
 		padding: 20px 4px;
 	}
-	.product-price {
-		flex-direction: column;
-		align-items: flex-start;
-	}
+  .product-item .product-price {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 	.product-price .old-price{
 		margin: 20px 0 0 0;
 	}
