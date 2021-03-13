@@ -57,6 +57,12 @@ body.overflow {
   overflow: hidden;
 }
 
+@media (min-width: 767px) {
+  body.overflow {
+    overflow: auto;
+  }
+}
+
 .header .lang.show .lang-dropdown {
   opacity: 1;
   visibility: visible;

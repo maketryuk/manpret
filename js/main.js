@@ -13,7 +13,7 @@ let front = {
         this.hamburger.addClass('open');
         this.header.addClass('active');
         this.body.addClass('overflow');
-        this.headerCategories.css('padding-top', mainNavHeight + 10);
+        this.headerCategories.css('padding-top', mainNavHeight + 20);
         } else {
             this.hamburger.removeClass('open');
             this.header.removeClass('active');
@@ -24,18 +24,6 @@ let front = {
 
   events: function () {
       let self = this;
-
-    
-
-          // if (window.matchMedia("(max-width: 992px)").matches) {
-      //         let categories = $('.single-categories--mobile');
-      //         let categoriesH = (-categories.height() - 52 );
-      //         $(categories).css('margin-top', categoriesH);
-      //     } else {
-      //         null
-      //     }
-
-
       $(document).on('click', '.hamburger', function () {
           self.toggleNav();
       });
@@ -45,9 +33,7 @@ let front = {
       $(document).on('click', '.sidebar-mobile-toggler', function () {
         $('.sidebar').toggleClass('active');
       });
-      // $(document).on('click', '.close-sidebar', function () {
-      //   $('.sidebar').removeClass('active');
-      // });
+
       $(document).on('click', '.products-text .more-btn', function () {
         $(this).hide();
         $('.products-text p').css('display', 'block');

@@ -634,9 +634,17 @@ table {
 		margin-bottom: 10px;
 	}
 }
+@media (min-width: 767px) {
+	.header-bottom {
+		padding-top: 0!important;
+	}
+}
 @media (max-width: 767px) {
 	.lang-dropdown {
 		top: 54px;
+	}
+	.header-categories .categories-link {
+		padding: 10px 20px;
 	}
 	.header-main {
 		justify-content: flex-start;
@@ -785,7 +793,7 @@ table {
 	}
 	.header-menu li {
 		padding: 0;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 	.header.active .header-top {
 		display: block;

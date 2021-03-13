@@ -60,6 +60,11 @@ $defaultText: #434d52;
 body.overflow {
   overflow: hidden;
 }
+@media (min-width: 767px) {
+  body.overflow {
+    overflow: auto;
+  }
+}
 
 .header {
   & .lang {
