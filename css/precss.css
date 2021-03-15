@@ -204,15 +204,15 @@ body.overflow {
   z-index: 202;
   background: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  padding: 5px 0 5px 200px;
+  padding: 0 0 0 200px;
   display: flex;
   align-items: center;
 }
 
 .header.scroll-header .header-logo {
   position: fixed;
-  width: 170px;
-  top: 10px;
+  width: 160px;
+  top: 6px;
   left: 20px;
   z-index: 203;
 }
@@ -848,6 +848,20 @@ main {
 }
 
 @media (max-width: 992px) {
+  .header-menu li {
+    padding-left: 14px;
+  }
+  .header-categories .categories-link {
+    padding: 12px 10px;
+  }
+  .header.scroll-header .header-bottom {
+    padding: 0 0 0 160px;
+  }
+  .header.scroll-header .header-logo {
+    width: 130px;
+    top: 6px;
+    left: 20px;
+  }
   .product-item {
     width: 43%;
   }
@@ -877,7 +891,49 @@ main {
   }
 }
 
+@media (min-width: 767px) {
+  .header-bottom {
+    padding-top: 0 !important;
+  }
+}
+
 @media (max-width: 767px) {
+  .header.scroll-header .header-bottom {
+    position: static;
+    width: auto;
+    left: -20px;
+    top: 0;
+    z-index: 90;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    display: none;
+    align-items: center;
+  }
+  .header.scroll-header .header-logo {
+    position: static;
+    width: 280px;
+    top: 10px;
+    left: 20px;
+    z-index: 90;
+  }
+  .header.scroll-header .header-cart {
+    position: static;
+    z-index: 90;
+    top: 10px;
+    right: 24px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 204;
+    background: #ffffff;
+  }
+  .header-main {
+    padding: 10px 0;
+  }
   .header .lang-dropdown {
     top: 55px;
   }
@@ -1001,6 +1057,12 @@ main {
   main {
     padding: 0 15px;
   }
+  .product-item {
+    border: none;
+  }
+  .product-item:hover {
+    border: none;
+  }
   .products-filters {
     flex-direction: column;
     align-items: flex-start;
@@ -1018,7 +1080,7 @@ main {
     display: none;
   }
   .lang {
-    margin-bottom: 30px;
+    margin: 25px 0 30px 0;
   }
   .header-menu, .header-categories {
     flex-direction: column;
@@ -1096,6 +1158,7 @@ main {
   .product-item {
     width: 43%;
     padding: 20px 4px;
+    border: none !important;
   }
   .product-item .product-price {
     align-items: flex-start;
@@ -1105,16 +1168,7 @@ main {
     margin: 20px 0 0 0;
   }
   .product-item .product-options {
-    display: none;
-  }
-  .product-item:hover .product-options {
-    display: none;
-  }
-  .product-item {
-    border: none;
-  }
-  .product-sizes {
-    display: none;
+    display: none !important;
   }
   .product-pagination {
     flex-direction: column-reverse;
