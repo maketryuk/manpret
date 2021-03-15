@@ -56,6 +56,14 @@ let front = {
             list.slideToggle();
         }
       });
+      let mainScreenHeight = $('.main-screen').height();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('header').addClass("scroll-header");
+        } else {
+          $('header').removeClass("scroll-header");
+        }
+      });
   }
 };
 

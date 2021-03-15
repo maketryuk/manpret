@@ -1,536 +1,1524 @@
-
-  <main>
-    <nav class="breadcrumb-nav">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Home</span></a></li>
-        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Girls</span></a></li>
-        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Accessories</span></a></li>
-        <li class="breadcrumb-item"> Bagages/sacs ordinateurs</li>
-      </ul>
-    </nav>
-    <section class="main-content">
-      <div class="sidebar-mobile-toggler">
-        <!-- <img src="./img/icons/filter.svg" alt="filter"> -->
-        <i class="icon-filter"></i>
-      </div>
-      <div class="sidebar">
-        <!-- <div class="close-sidebar"></div> -->
-        <div class="sidebar-item shoping-by-filter">
-          <div class="sidebar-title">
-            NOW SHOPING BY
-          </div>
-          <div class="sidebar-content">
-            <div class="filter-control">
-              <a href="#" class="filter-remove"></a>
-              <span class="filter-brand">Brand:</span>
-              <span class="filter-value">AMERICAN TOURISTER</span>
-            </div>
-          </div>
-          <div class="filter-clear">
-            <a href="#" class="clear-btn">Clear All</a>
+<main>
+  <nav class="breadcrumb-nav">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Accueil </span></a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Filles</span></a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><span>Accessoires </span></a></li>
+      <li class="breadcrumb-item">Bagages/sacs ordinateurs</li>
+    </ul>
+  </nav>
+  <section class="main-content">
+    <div class="sidebar-mobile-toggler">
+      <!-- <img src="./img/icons/filter.svg" alt="filter"> -->
+      <i class="icon-filter"></i>
+    </div>
+    <div class="sidebar">
+      <!-- <div class="close-sidebar"></div> -->
+      <div class="sidebar-item shoping-by-filter">
+        <div class="sidebar-title">
+          NOW SHOPING BY
+        </div>
+        <div class="sidebar-content">
+          <div class="filter-control">
+            <a href="#" class="filter-remove"></a>
+            <span class="filter-brand">Brand:</span>
+            <span class="filter-value">AMERICAN TOURISTER</span>
           </div>
         </div>
-
-        <div class="sidebar-item active">
-          <div class="sidebar-title active">CATEGORY
-            <button class="sidebar-toggle">
-              <i class="icon-triangle"></i>
-            </button>
-          </div>
-          <div class="sidebar-content">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type="checkbox" name="filter-item-1" id="filter-item-1">
-                <label for="filter-item-1">AMERICAN TOURISTER
-                  <span>(4)</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <input type="checkbox" name="filter-item-2" id="filter-item-2">
-                <label for="filter-item-2">SAMSONITE
-                  <span>(2)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
+        <div class="filter-clear">
+          <a href="#" class="clear-btn">Clear All</a>
         </div>
-
-        <div class="sidebar-item active">
-          <div class="sidebar-title active">PRICE
-            <button class="sidebar-toggle">
-              <i class="icon-triangle"></i>
-            </button>
-          </div>
-          <div class="sidebar-content">
-            <div id="slider-range"></div>
-            <div class="slider-range-total">
-              <input type="text" id="amount" readonly>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar-item active">
-          <div class="sidebar-title active">BRAND
-            <button class="sidebar-toggle">
-              <i class="icon-triangle"></i>
-            </button>
-          </div>
-          <div class="sidebar-content">
-            <div class="filter-search">
-              <form action="">
-                <input type="search" placeholder="Search">
-              </form>
-            </div>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type="checkbox" name="filter-item-3" id="filter-item-3">
-                <label for="filter-item-3">AMERICAN TOURISTER
-                  <span>(4)</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <input type="checkbox" name="filter-item-4" id="filter-item-4">
-                <label for="filter-item-4">SAMSONITE
-                  <span>(2)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="sidebar-item active">
-          <div class="sidebar-title active">COULEUR ÉTIQUETTE
-            <button class="sidebar-toggle">
-              <i class="icon-triangle"></i>
-            </button>
-          </div>
-          <div class="sidebar-content">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type="radio" name="radio-group" id="radio-item-1">
-                <label for="radio-item-1">967
-                  <span>(4)</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <input type="radio" name="radio-group" id="radio-item-2">
-                <label for="radio-item-2">Rose
-                  <span>(2)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="sidebar-item active">
-          <div class="sidebar-title active">SEMELLE AMOVIBLE
-            <button class="sidebar-toggle">
-              <i class="icon-triangle"></i>
-            </button>
-          </div>
-          <div class="sidebar-content">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type="radio" name="radio-group" id="radio-item-3">
-                <label for="radio-item-3">1
-                  <span>(177)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="sidebar-item">
-          <div class="sidebar-title">POINTURE
-            <button class="sidebar-toggle">
-              <i class="icon-triangle"></i>
-            </button>
-          </div>
-          <div class="sidebar-content">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type="radio" name="radio-group" id="radio-item-4">
-                <label for="radio-item-4">1
-                  <span>(177)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="sidebar-item">
-          <div class="sidebar-title">PROMOTION ?
-            <button class="sidebar-toggle">
-              <i class="icon-triangle"></i>
-            </button>
-          </div>
-          <div class="sidebar-content">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type="radio" name="radio-group" id="radio-item-5">
-                <label for="radio-item-5">YES
-                  <span>(999)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <a href="#" class="more-filters">
-          + Vair plus de filters
-        </a>
       </div>
 
-      <div class="products">
-        <div class="products-text">
-          <h1>
-            Bottines femme en cuir
-          </h1>
-          <div class="default-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
-              facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
-              placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
-              voluptate. Odit illum similique eius neque nam. Magnam, illum.
-            </p>
-          </div>
-          <div class="additional-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
-              facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
-              placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
-              voluptate. Odit illum similique eius neque nam. Magnam, illum.
-            </p>
-          </div>
-          <div class="more-btn">Show More</div>
+      <div class="sidebar-item active">
+        <div class="sidebar-title active">CATEGORY
+          <button class="sidebar-toggle">
+            <i class="icon-triangle"></i>
+          </button>
         </div>
-        <div class="products-filters">
-          <div class="sort-by-title">
-            <span>Sort By</span>
-            <div class="select-wrapper">
-              <select>
-                <option value="position">Position</option>
-                <option value="product-name">Product Name</option>
-                <option value="price">Price</option>
-              </select>
-            </div>
-            <a href="#" class="sort-by-arrow">
-              <i class="icon-sort-arrow"></i>
-            </a>
-            <!-- <a href="#" class="sort-by-arrow active">
-              <i class="icon-sort-arrow"></i>
-            </a> -->
-            <span>6 Items</span>
-          </div>
-          <div class="sort-by-number">
-            <span>Show</span>
-            <div class="select-wrapper">
-              <select>
-                <option value="30">30</option>
-                <option value="60">60</option>
-                <option value="90">90</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row product-list">
-          <a href="#" class="product-item">
-            <div class="product-main">
-              <div class="product-badge badge-new">
-                <img src="./img/badge-new.png" alt="NEW">
-              </div>
-              <div class="product-image">
-                <img src="./img/product-item-image.jpeg" alt="Picture of the product">
-              </div>
-              <div class="product-title">MINNIEPINKD</div>
-              <div class="product-subtitle">SAMSONITE</div>
-              <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
-                quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
-            </div>
-            <div class="product-price">
-              <div class="new-price">€119.00</div>
-            </div>
-            <div class="product-options">
-              <div class="product-sizes">
-                <div class="sizes-title">
-                  Size
-                </div>
-                <ul class="sizes-list">
-                  <li>36</li>
-                  <li>37</li>
-                  <li>38</li>
-                  <li>39</li>
-                  <li>40</li>
-                  <li>41</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="product-item">
-            <div class="product-main">
-              <div class="product-badge badge-new">
-                <img src="./img/badge-new.png" alt="NEW">
-              </div>
-              <div class="product-image">
-                <img src="./img/product-item-image.jpeg" alt="Picture of the product">
-              </div>
-              <div class="product-title">MINNIEPINKD</div>
-              <div class="product-subtitle">SAMSONITE</div>
-              <div class="product-parameters">
-                <div class="parameter-item">
-                  <div class="key">Color:</div>
-                  <div class="value">NOIR</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Material:</div>
-                  <div class="value">CUIR VERNIS</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Lining:</div>
-                  <div class="value">CUIR</div>
-                </div>
-              </div>
-            </div>
-            <div class="product-price">
-              <div class="new-price">119.00 <span>€</span></div>
-              <div class="old-price">129.00 <span>€</span></div>
-            </div>
-            <div class="product-options">
-              <div class="product-sizes">
-                <div class="sizes-title">
-                  Size
-                </div>
-                <ul class="sizes-list">
-                  <li>36</li>
-                  <li>37</li>
-                  <li>38</li>
-                  <li>39</li>
-                  <li>40</li>
-                  <li>41</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="product-item">
-            <div class="product-main">
-              <div class="product-badge badge-crazy-prices">
-                <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
-              </div>
-              <div class="product-image">
-                <img src="./img/product-item-image.jpeg" alt="Picture of the product">
-              </div>
-              <div class="product-title">MINNIEPINKD</div>
-              <div class="product-subtitle">SAMSONITE</div>
-              <div class="product-parameters">
-                <div class="parameter-item">
-                  <div class="key">Color:</div>
-                  <div class="value">NOIR</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Material:</div>
-                  <div class="value">CUIR VERNIS</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Lining:</div>
-                  <div class="value">CUIR</div>
-                </div>
-              </div>
-            </div>
-            <div class="product-price">
-              <div class="new-price">119.00 <span>€</span></div>
-              <div class="old-price">129.00 <span>€</span></div>
-            </div>
-            <div class="product-options">
-              <div class="product-sizes">
-                <div class="sizes-title">
-                  Size
-                </div>
-                <ul class="sizes-list">
-                  <li>36</li>
-                  <li>37</li>
-                  <li>38</li>
-                  <li>39</li>
-                  <li>40</li>
-                  <li>41</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="product-item">
-            <div class="product-main">
-              <div class="product-badge badge-new">
-                <img src="./img/badge-new.png" alt="NEW">
-              </div>
-              <div class="product-image">
-                <img src="./img/product-item-image.jpeg" alt="Picture of the product">
-              </div>
-              <div class="product-title">MINNIEPINKD</div>
-              <div class="product-subtitle">SAMSONITE</div>
-              <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
-                quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
-            </div>
-            <div class="product-price">
-              <div class="new-price">€119.00</div>
-            </div>
-            <div class="product-options">
-              <div class="product-sizes">
-                <div class="sizes-title">
-                  Size
-                </div>
-                <ul class="sizes-list">
-                  <li>36</li>
-                  <li>37</li>
-                  <li>38</li>
-                  <li>39</li>
-                  <li>40</li>
-                  <li>41</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="product-item">
-            <div class="product-main">
-              <div class="product-badge badge-new">
-                <img src="./img/badge-new.png" alt="NEW">
-              </div>
-              <div class="product-image">
-                <img src="./img/product-item-image.jpeg" alt="Picture of the product">
-              </div>
-              <div class="product-title">MINNIEPINKD</div>
-              <div class="product-subtitle">SAMSONITE</div>
-              <div class="product-parameters">
-                <div class="parameter-item">
-                  <div class="key">Color:</div>
-                  <div class="value">NOIR</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Material:</div>
-                  <div class="value">CUIR VERNIS</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Lining:</div>
-                  <div class="value">CUIR</div>
-                </div>
-              </div>
-            </div>
-            <div class="product-price">
-              <div class="new-price">119.00 <span>€</span></div>
-              <div class="old-price">129.00 <span>€</span></div>
-            </div>
-            <div class="product-options">
-              <div class="product-sizes">
-                <div class="sizes-title">
-                  Size
-                </div>
-                <ul class="sizes-list">
-                  <li>36</li>
-                  <li>37</li>
-                  <li>38</li>
-                  <li>39</li>
-                  <li>40</li>
-                  <li>41</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="product-item">
-            <div class="product-main">
-              <div class="product-badge badge-crazy-prices">
-                <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
-              </div>
-              <div class="product-image">
-                <img src="./img/product-item-image.jpeg" alt="Picture of the product">
-              </div>
-              <div class="product-title">MINNIEPINKD</div>
-              <div class="product-subtitle">SAMSONITE</div>
-              <div class="product-parameters">
-                <div class="parameter-item">
-                  <div class="key">Color:</div>
-                  <div class="value">NOIR</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Material:</div>
-                  <div class="value">CUIR VERNIS</div>
-                </div>
-                <div class="parameter-item">
-                  <div class="key">Lining:</div>
-                  <div class="value">CUIR</div>
-                </div>
-              </div>
-            </div>
-            <div class="product-price">
-              <div class="new-price">119.00 <span>€</span></div>
-              <div class="old-price">129.00 <span>€</span></div>
-            </div>
-            <div class="product-options">
-              <div class="product-sizes">
-                <div class="sizes-title">
-                  Size
-                </div>
-                <ul class="sizes-list">
-                  <li>36</li>
-                  <li>37</li>
-                  <li>38</li>
-                  <li>39</li>
-                  <li>40</li>
-                  <li>41</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="product-pagination">
-          <div class="sort-by-number">
-            <span>Show</span>
-            <div class="select-wrapper">
-              <select>
-                <option value="30">30</option>
-                <option value="60">60</option>
-                <option value="90">90</option>
-              </select>
-            </div>
-          </div>
-          <div class="pagination">
-            <div class="page-number">1</div>
-            <div class="page-number">2</div>
-            <div class="page-number">3</div>
-            <div class="page-number">4</div>
-            <div class="page-number">5</div>
-            <div class="page-number page-next"><i class="icon-arrow"></i></div>
-          </div>
-        </div>
-        <div class="products-text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
-            facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
-            placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
-            voluptate. Odit illum similique eius neque nam. Magnam, illum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
-            facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
-            placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
-            voluptate. Odit illum similique eius neque nam. Magnam, illum.
-          </p>
-        </div>
-        <div class="recommendations">
-          <span class="recommendations-title">PRODUCT RECOMMENDATIONS</span>
-          <ul class="recommendations-list">
-            <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
-            <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
-            <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
-            <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
-            <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
-            <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
+        <div class="sidebar-content">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="checkbox" name="filter-item-1" id="filter-item-1">
+              <label for="filter-item-1">AMERICAN TOURISTER
+                <span>(4)</span>
+              </label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" name="filter-item-2" id="filter-item-2">
+              <label for="filter-item-2">SAMSONITE
+                <span>(2)</span>
+              </label>
+            </li>
           </ul>
         </div>
       </div>
-    </section>
-  </main>
+
+      <div class="sidebar-item active">
+        <div class="sidebar-title active">PRICE
+          <button class="sidebar-toggle">
+            <i class="icon-triangle"></i>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <div id="slider-range"></div>
+          <div class="slider-range-total">
+            <input type="text" id="amount" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-item active">
+        <div class="sidebar-title active">BRAND
+          <button class="sidebar-toggle">
+            <i class="icon-triangle"></i>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <div class="filter-search">
+            <form action="">
+              <input type="search" placeholder="Search">
+            </form>
+          </div>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="checkbox" name="filter-item-3" id="filter-item-3">
+              <label for="filter-item-3">AMERICAN TOURISTER
+                <span>(4)</span>
+              </label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" name="filter-item-4" id="filter-item-4">
+              <label for="filter-item-4">SAMSONITE
+                <span>(2)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-item active">
+        <div class="sidebar-title active">COULEUR ÉTIQUETTE
+          <button class="sidebar-toggle">
+            <i class="icon-triangle"></i>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="radio" name="radio-group" id="radio-item-1">
+              <label for="radio-item-1">967
+                <span>(4)</span>
+              </label>
+            </li>
+            <li class="filter-item">
+              <input type="radio" name="radio-group" id="radio-item-2">
+              <label for="radio-item-2">Rose
+                <span>(2)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-item active">
+        <div class="sidebar-title active">SEMELLE AMOVIBLE
+          <button class="sidebar-toggle">
+            <i class="icon-triangle"></i>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="radio" name="radio-group" id="radio-item-3">
+              <label for="radio-item-3">1
+                <span>(177)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-title">POINTURE
+          <button class="sidebar-toggle">
+            <i class="icon-triangle"></i>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="radio" name="radio-group" id="radio-item-4">
+              <label for="radio-item-4">1
+                <span>(177)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-title">PROMOTION ?
+          <button class="sidebar-toggle">
+            <i class="icon-triangle"></i>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="radio" name="radio-group" id="radio-item-5">
+              <label for="radio-item-5">YES
+                <span>(999)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="more-filters">
+        + Vair plus de filters
+      </a>
+    </div>
+
+    <div class="products">
+      <div class="products-text">
+        <h1>
+          Bottines femme en cuir
+        </h1>
+        <div class="default-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
+            facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
+            placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
+            voluptate. Odit illum similique eius neque nam. Magnam, illum.
+          </p>
+        </div>
+        <div class="additional-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
+            facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
+            placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
+            voluptate. Odit illum similique eius neque nam. Magnam, illum.
+          </p>
+        </div>
+        <div class="more-btn">Show More</div>
+      </div>
+      <div class="products-filters">
+        <div class="sort-by-title">
+          <span>Trier par </span>
+          <div class="select-wrapper">
+            <select>
+              <option value="position">Position</option>
+              <option value="product-name">Nom de produit </option>
+              <option value="price">Prix </option>
+            </select>
+          </div>
+          <a href="#" class="sort-by-arrow">
+            <i class="icon-sort-arrow"></i>
+          </a>
+          <!-- <a href="#" class="sort-by-arrow active">
+            <i class="icon-sort-arrow"></i>
+          </a> -->
+          <span>Articles 1-30 sur 676</span>
+        </div>
+        <div class="sort-by-number">
+          <span>Afficher</span>
+          <div class="select-wrapper">
+            <select>
+              <option value="30">30</option>
+              <option value="60">60</option>
+              <option value="90">90</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row product-list">
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias
+              quod laudantium quos reprehenderit quia, atque cum nihil nesciunt sit?</div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">€119.00</div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-new">
+              <img src="./img/badge-new.png" alt="NEW">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product-item">
+          <div class="product-main">
+            <div class="product-badge badge-crazy-prices">
+              <img src="./img/badge-crazy-prices.png" alt="Crazy Prices">
+            </div>
+            <div class="product-image">
+              <img src="./img/product-item-image.jpeg" alt="Picture of the product">
+            </div>
+            <h2 class="product-title">MINNIEPINKD</h2>
+            <div class="product-subtitle">SAMSONITE</div>
+            <div class="product-parameters">
+              <div class="parameter-item">
+                <div class="key">Color:</div>
+                <div class="value">NOIR</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Material:</div>
+                <div class="value">CUIR VERNIS</div>
+              </div>
+              <div class="parameter-item">
+                <div class="key">Lining:</div>
+                <div class="value">CUIR</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-price">
+            <div class="new-price">119.00 <span>€</span></div>
+            <div class="old-price">129.00 <span>€</span></div>
+          </div>
+          <div class="product-options">
+            <div class="product-sizes">
+              <div class="sizes-title">
+                Size
+              </div>
+              <ul class="sizes-list">
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+                <li>41</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-pagination">
+        <div class="sort-by-number">
+          <span>Afficher</span>
+          <div class="select-wrapper">
+            <select>
+              <option value="30">30</option>
+              <option value="60">60</option>
+              <option value="90">90</option>
+            </select>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="page-number">1</div>
+          <div class="page-number">2</div>
+          <div class="page-number">3</div>
+          <div class="page-number">4</div>
+          <div class="page-number">5</div>
+          <div class="page-number page-next"><i class="icon-arrow"></i></div>
+        </div>
+      </div>
+      <div class="products-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
+          facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
+          placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
+          voluptate. Odit illum similique eius neque nam. Magnam, illum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis pariatur exercitationem odit illum
+          facilis ab, possimus blanditiis reprehenderit, iusto, aperiam corrupti doloremque aut. Rerum non dolorem
+          placeat nobis fugit commodi illo, dolorum saepe numquam? Voluptatem non corporis, dolorum fugiat omnis
+          voluptate. Odit illum similique eius neque nam. Magnam, illum.
+        </p>
+      </div>
+      <div class="recommendations">
+        <h2 class="recommendations-title">Produits recommandés</h2>
+        <ul class="recommendations-list">
+          <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
+          <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
+          <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
+          <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">Lorem, ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">ipsum dolor.</a></li>
+          <li><a class="recommendations-link" href="#">Lorem dolor.</a></li>
+          <li><a class="recommendations-link" href="#">dolor. ipsum dolor.</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>

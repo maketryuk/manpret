@@ -163,7 +163,7 @@ table {
 .header-menu .menu-link {
   color: #444d53;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .header-menu .menu-link:hover {
@@ -208,6 +208,7 @@ table {
   font-weight: 700;
   text-transform: uppercase;
   color: #434d52;
+  font-size: 12px;
   text-decoration: none;
   transition: all .3s ease-in-out;
 }
@@ -226,7 +227,12 @@ table {
 }
 
 .breadcrumb-link span {
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.breadcrumb-item:after {
+  font-size: 9px;
+  font-weight: 900;
 }
 
 .sidebar-title {
@@ -374,11 +380,11 @@ table {
 
 .product-title {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .product-subtitle {
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .product-parameters .key {
@@ -391,17 +397,22 @@ table {
 }
 
 .product-price .new-price {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.product-price .new-price span {
+  font-weight: 600;
 }
 
 .product-price .old-price {
   color: #a7a7a7;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .product-price .old-price span {
+  font-weight: 600;
   color: #a7a7a7;
 }
 

@@ -196,6 +196,34 @@ body.overflow {
   display: block;
 }
 
+.header.scroll-header .header-bottom {
+  position: fixed;
+  width: calc(100% + 40px);
+  left: -20px;
+  top: 0;
+  z-index: 202;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 5px 0 5px 200px;
+  display: flex;
+  align-items: center;
+}
+
+.header.scroll-header .header-logo {
+  position: fixed;
+  width: 170px;
+  top: 10px;
+  left: 20px;
+  z-index: 203;
+}
+
+.header.scroll-header .header-cart {
+  position: fixed;
+  z-index: 204;
+  top: 10px;
+  right: 24px;
+}
+
 main {
   padding: 0 20px;
 }
@@ -849,15 +877,9 @@ main {
   }
 }
 
-@media (min-width: 767px) {
-  .header-bottom {
-    padding-top: 0 !important;
-  }
-}
-
 @media (max-width: 767px) {
-  .lang-dropdown {
-    top: 54px;
+  .header .lang-dropdown {
+    top: 55px;
   }
   .header-categories .categories-link {
     padding: 10px 20px;
