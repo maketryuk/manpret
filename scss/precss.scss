@@ -854,8 +854,18 @@ main {
 	.header-search {
 		margin: 0 0 0 auto;
 	}
+	.header-search .form-control.open {
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 100%;
+	}
 	.search-link-mobile {
 		text-decoration: none;
+		display: block;
+	}
+	.search-link-mobile i {
+		pointer-events: none;
 	}
 	.header-control {
 		margin-right: 0;
@@ -874,6 +884,18 @@ main {
 	}
 	.header-search .form-control {
 		display: none;
+	}
+	.header-search .form-control.open {
+		z-index: 95;
+    top: 70px;
+    background: #ffffff;
+    width: 95%;
+		left: 2.5%;
+    padding: 0 0 10px 0;
+	}
+	.form-control.open button {
+		
+		height: calc(100% - 10px);
 	}
 	.header-search .hidden-md {
 		display: block;
@@ -1056,6 +1078,9 @@ main {
 }
 
 @media (max-width: 576px) {
+	.header-search .form-control.open {
+		top: 47px;
+	}
 	.header-logo {
     width: 100%;
     margin-right: 10px;
