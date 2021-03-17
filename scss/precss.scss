@@ -800,6 +800,9 @@ main {
 	}
 }
 @media (max-width: 767px) {
+	main {
+		margin-top: 80px;
+	}
 	.header.scroll-header {
 		& .header-bottom {
 			position: static;
@@ -1078,6 +1081,9 @@ main {
 }
 
 @media (max-width: 576px) {
+	main {
+		margin-top: 60px;
+	}
 	.header-search .form-control.open {
 		top: 47px;
 	}
